@@ -22,7 +22,7 @@ export default function Analyzer({ file, onBack }) {
     fd.append("job_desc", jd);
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/analyze", {
+      const res = await fetch("https://ai-resume-analyzer-c336.onrender.com", {
         method: "POST",
         body: fd
       });

@@ -1,0 +1,160 @@
+/* ------------------------------
+   Global Styles
+------------------------------ */
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #ebf4ff, #ffffff);
+  color: #333;
+}
+
+/* ------------------------------
+   Container & Layout
+------------------------------ */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* ------------------------------
+   Header
+------------------------------ */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1d4ed8;
+}
+
+header p {
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+/* ------------------------------
+   Upload Card
+------------------------------ */
+.upload-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  border: 1px solid #f1f1f1;
+}
+
+.upload-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #93c5fd;
+  border-radius: 1rem;
+  padding: 2rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.upload-label:hover {
+  background: #eff6ff;
+}
+
+.upload-label span {
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.upload-file {
+  display: none;
+}
+
+.file-info {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* ------------------------------
+   Button
+------------------------------ */
+button {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 0.75rem;
+  background: #2563eb;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ------------------------------
+   Result Section
+------------------------------ */
+.result-card {
+  margin-top: 2rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  border: 1px solid #f1f1f1;
+}
+
+.result-card h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1d4ed8;
+}
+
+.score-circle {
+  margin: 1.5rem auto;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 10px solid #bfdbfe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-circle span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.suggestions {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 1rem;
+}
